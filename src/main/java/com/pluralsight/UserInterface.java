@@ -14,7 +14,7 @@ public class UserInterface {
         while (true) {
             System.out.println("\n===== DEALERSHIP MENU =====");
             System.out.println("1. List all vehicles");
-            System.out.println("99. Exit");
+            System.out.println("0. Exit");
             System.out.print("Enter choice: ");
 
             int choice = Integer.parseInt(scanner.nextLine());
@@ -23,7 +23,7 @@ public class UserInterface {
                 case 1:
                     processAllVehiclesRequest();
                     break;
-                case 99:
+                case 0:
                     return;
                 default:
                     System.out.println("Invalid option");
